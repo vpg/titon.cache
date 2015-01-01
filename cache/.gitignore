@@ -1,5 +1,0 @@
-.idea
-.DS_Store
-vendor/
-tests/tmp/
-composer.lock
