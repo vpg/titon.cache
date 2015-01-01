@@ -1,0 +1,29 @@
+{
+    "name": "titon/cache",
+    "type": "library",
+    "description": "The Titon cache package provides a data caching layer that supports multiple storage engines.",
+    "keywords": ["titon", "cache", "storage", "apc", "memcache", "wincache", "redis", "xcache", "memory"],
+    "homepage": "http://titon.io",
+    "license": "BSD-2",
+    "authors": [
+        {
+            "name": "Miles Johnson",
+            "homepage": "http://milesj.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "titon/common": "*"
+    },
+    "require-dev": {
+        "titon/test": "dev-master",
+        "titon/io": "*",
+        "titon/db": "*"
+    },
+    "suggest": {
+        "titon/io": "Use IO File for FileSystemStorage"
+    },
+    "autoload": {
+        "psr-0": { "Titon\\Cache": "src/" }
+    }
+}
