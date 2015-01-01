@@ -6,13 +6,9 @@
     "homepage": "http://titon.io",
     "license": "BSD-2",
     "repositories": {
-      "VPG_titon_common": {
+      "vpg/titon.common": {
           "type":"vcs",
           "url":"https://github.com/vpg/titon.common"
-      },
-      "VPG_titon_utility": {
-          "type":"vcs",
-          "url":"https://github.com/vpg/titon.utility"
       }
     },
     "replace" : {
