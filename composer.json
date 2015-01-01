@@ -1,10 +1,23 @@
 {
-    "name": "titon/cache",
+    "name": "vpg/titon.cache",
     "type": "library",
     "description": "The Titon cache package provides a data caching layer that supports multiple storage engines.",
     "keywords": ["titon", "cache", "storage", "apc", "memcache", "wincache", "redis", "xcache", "memory"],
     "homepage": "http://titon.io",
     "license": "BSD-2",
+    "repositories": {
+      "VPG_titon_common": {
+          "type":"vcs",
+          "url":"https://github.com/vpg/titon.common"
+      },
+      "VPG_titon_utility": {
+          "type":"vcs",
+          "url":"https://github.com/vpg/titon.utility"
+      }
+    },
+    "replace" : {
+          "titon/cache":"*"
+    },
     "authors": [
         {
             "name": "Miles Johnson",
@@ -13,15 +26,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "titon/common": "*"
-    },
-    "require-dev": {
-        "titon/test": "dev-master",
-        "titon/io": "*",
-        "titon/db": "*"
-    },
-    "suggest": {
-        "titon/io": "Use IO File for FileSystemStorage"
+        "vpg/titon.common": "*"
     },
     "autoload": {
         "psr-0": { "Titon\\Cache": "src/" }
