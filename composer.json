@@ -5,12 +5,6 @@
     "keywords": ["titon", "cache", "storage", "apc", "memcache", "wincache", "redis", "xcache", "memory"],
     "homepage": "http://titon.io",
     "license": "BSD-2",
-    "repositories": {
-      "vpg/titon.common": {
-          "type":"vcs",
-          "url":"https://github.com/vpg/titon.common"
-      }
-    },
     "replace" : {
           "titon/cache":"*"
     },
